@@ -136,7 +136,16 @@ class Hero extends Entity{ // class Hero extend Entity
         this.life = 15; // Nyawa Hero awal 15
     }
 
+show(){ // fungsi untuk menampilkan bentuk Hero
+        fill('#ff0');
+        ellipse(this.x, this.y, this.width, this.height);
+        noFill();
+    }
 
+    increaseScore(){ // Fungsi Meningkatkan score
+        score++;
+    }
+}
 
 class Monster extends Entity{ // class Monster extend Entity
     constructor(x, y, width, height){
